@@ -55,6 +55,7 @@ public class UserServiceImpl implements UserService {
         return UserMapper.MAPPER.toUserDtoData(user);
     }
 
+
     @Override
     public UserDto UpdateUser(Integer id, UserAddRequest request) {
         validationUtil.validate(request);
